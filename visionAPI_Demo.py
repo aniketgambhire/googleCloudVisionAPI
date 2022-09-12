@@ -41,6 +41,8 @@ def visionAPIDemoUsingAPIKey(img_path):
 
     if response.status_code == 200:
         print("Response - ", response.json()['responses'][0])
+    else:
+        print("API failed with response status - ", response.status_code)
 
 if __name__ == '__main__':
     img_path = "./handwritten.jpg"
