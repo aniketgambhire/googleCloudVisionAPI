@@ -43,6 +43,6 @@ def visionAPIDemoUsingAPIKey(img_path):
         print("Response - ", response.json()['responses'][0])
 
 if __name__ == '__main__':
-    img_path = "./resources/handwritten.jpg"
+    img_path = "./handwritten.jpg"
     visionAPIDemoUsingAuthToken(img_path)
     visionAPIDemoUsingAPIKey(img_path)
